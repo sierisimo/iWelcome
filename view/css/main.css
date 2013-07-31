@@ -4,7 +4,9 @@
 }
 
 html,body{overflow: hidden;height: 100%;width: 100%;}
-
+body{
+    background-color: #d1d1d1;
+}
 /*colores*/
 .inteliBlue-fg {color: #007b97; }
 .inteliGreen-fg {color: #005837; }
@@ -16,15 +18,15 @@ html,body{overflow: hidden;height: 100%;width: 100%;}
 .inteliYellow-fg {color: #dba50f; }
 .inteliPurple-fg {color: #3c225e; }
 
-.inteliBlue-bg {background-color: #009cc0; }
-.inteliGreen-bg {background-color: #008151; }
+.inteliBlue-bg {background-color: #0094CC; }
+.inteliGreen-bg {background-color: #003260; }
 .inteliGrey-bg {background-color: #cdcac5; }
 .inteliBrown-bg {background-color: #ca9b8e; }
 .inteliRed-bg {background-color: #e41c29; }
 .inteliOrange-bg {background-color: #f58a47; }
 .inteliGreyDark-bg {background-color: #a2a09b; }
-.inteliYellow-bg {background-color: #f0ba23; }
-.inteliPurple-bg { background-color: #4f2d7c; }
+.inteliYellow-bg {background-color: #B2DFF2; }
+.inteliPurple-bg { background-color: #B2C0D0; }
 
 p, em, div {
     word-wrap: break-word;
@@ -32,7 +34,7 @@ p, em, div {
 }
 
 .announcer{
-    background-color: black;
+    background-color: #2B416A;
     width: 100%;
     opacity: 0;
     height: 100%;
@@ -66,6 +68,12 @@ p, em, div {
     overflow: hidden;
     text-align: left;
     white-space: pre-line;
+}
+
+p > em{
+    font-size: 0.5em;
+    padding-left: 2em;
+    margin-left: 2em;
 }
 
 #upper, #downy{width: 100%;height: 50%;display: block;}
