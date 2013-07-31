@@ -4,7 +4,7 @@
 			"inteliYellow-bg","inteliPurple-bg"],
 		divs = ["#upper_left_","#upper_right_","#bottom_right_","#bottom_left_"],
 		clock = 0, sides = ["left","up","right","down"], 
-		colorPos = 0, names = [{name:'sier'},{name:'chux',org:'inteli'},{name:'manuel',org:'consis'}], lpShown = 0, queue = [],
+		colorPos = 0, names = [], lpShown = 0, queue = [],
 		states = [
 			{
 				showing:"first",
