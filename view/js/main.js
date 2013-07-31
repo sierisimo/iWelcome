@@ -69,8 +69,8 @@
 		},3000);
 
 	}
-	setInterval(sayHi,5000);
-	//var time = setInterval(changeColor,5000);
-	//setTimeout(function(){clearInterval(time);},200000);
+	setInterval(sayHi,8000);
+	var time = setInterval(changeColor,5000);
+	setTimeout(function(){clearInterval(time);},200000);
 
 })();
