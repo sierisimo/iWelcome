@@ -37,6 +37,7 @@ p, em, div {
     opacity: 0;
     height: 100%;
     position: absolute;
+    z-index: 9;
 }
 
 .announcer > p {
