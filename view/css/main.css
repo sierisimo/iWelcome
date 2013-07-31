@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,body{overflow: hidden;height: 100%;width: 100%;}
+
+/*colores*/
+.inteliBlue-fg {color: #007b97; }
+.inteliGreen-fg {color: #005837; }
+.inteliGrey-fg {color: #bab6af; }
+.inteliBrown-fg {color: #bd8372; }
+.inteliRed-fg {color: #c01722; }
+.inteliOrange-fg {color: #f37120; }
+.inteliGreyDark-fg {color: #3d3a39;}/* #8e8c86; }*/
+.inteliYellow-fg {color: #dba50f; }
+.inteliPurple-fg {color: #3c225e; }
+
+.inteliBlue-bg {background-color: #009cc0; }
+.inteliGreen-bg {background-color: #008151; }
+.inteliGrey-bg {background-color: #cdcac5; }
+.inteliBrown-bg {background-color: #ca9b8e; }
+.inteliRed-bg {background-color: #e41c29; }
+.inteliOrange-bg {background-color: #f58a47; }
+.inteliGreyDark-bg {background-color: #a2a09b; }
+.inteliYellow-bg {background-color: #f0ba23; }
+.inteliPurple-bg { background-color: #4f2d7c; }
+
+p, em, div {
+    word-wrap: break-word;
+    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.announcer{
+    background-color: black;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+}
+
+.announcer > p {
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 4em;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+    white-space: pre-line;
+}
+
+.upper_left, .bottom_left{float: left;width: 50%;height: 100%;}
+.upper_right,.bottom_right{float: right;width: 50%;height: 100%;}
+
+.upper_left{z-index: 1;}
+.upper_right{z-index: 2;}
+.bottom_left{z-index:2;}
+.bottom_right{z-index: 3;}
+
+.upper_right > p,.bottom_right > p,.upper_left > p, .bottom_left > p{
+    padding-top: 3%;
+    padding-left: 3%;
+    font-size: 2em;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+    white-space: pre-line;
+}
+
+#upper, #downy{width: 100%;height: 50%;display: block;}
+
+.hidden{display:none;}
+
+.legend{display:inline;font-size: 0.7em; z-index: 10;position: absolute;top:95%;left:85%;}
+
+#welcome{display: block;position:absolute; top:0;left: 0;bottom: 0;right: 0; z-index: 1;}
