@@ -47,12 +47,13 @@
 		person = names[lpShown];
 		org = person.org || '';
 
-		$(divs[clock]+actual).children()[0].innerHTML = '<strong>'+person.name+'</strong>'+'<br>'+'<em>&nbsp;'+org+'</em>';
+		
 		$(divs[clock]+actual)
 			.removeClass('hidden')
 			.removeClass(oldClass)
 			.addClass(colors[newColor])	
 			.transition({rotateX:'360deg', duration:800});
+		$(divs[clock]+actual).children()[0].innerHTML = '<strong>'+person.name+'</strong>'+'<br>'+'<em>&nbsp;'+org+'</em>';
 
 		lpShown++;
 		colorPos = newColor;
@@ -71,14 +72,14 @@
 	function sayHi(){
 		if(queue.length > 0){
 			var person = queue.shift(), org = person.org || '';
-			$('#welcome_guest')[0].innerHTML = '<strong>'+person.name+'</strong>'+'<em>'+org+'</em>';
+			$('#welcome_guest')[0].innerHTML = '<strong>'+person.name+'</strong>'+'<br><em>'+org+'</em>';
 			$('#announcer').removeAttr('style').transition({opacity:100});
 				setTimeout(function(){
 				$('#announcer').transition({opacity:0}).transition({display:'none'});
 			},7000);
 		}
 	}
-	setInterval(sayHi,7000)
+	setInterval(sayHi,10000)
 	var time = setInterval(changeColor,4000);
 	
 	window.names = names;
